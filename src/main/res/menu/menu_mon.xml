@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    tools:context=".MonActivity">
+
+    <item android:id="@+id/action_refresh" android:title="@string/action_refresh"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" />
+    <item android:id="@+id/action_killall" android:title="@string/action_killall"
+        android:orderInCategory="100" />
+
+    <item android:id="@+id/action_batterystatus" android:title="@string/action_batterystatus"
+        android:orderInCategory="100" />
+
+    <group
+        android:id="@+id/group_sort"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sort_adj"
+            android:title="Sort By Oom Adj" />
+        <item
+            android:id="@+id/sort_cpu"
+            android:title="Sort By CPU Usage" />
+        <item
+            android:id="@+id/sort_name"
+            android:title="Sort By App Name" />
+    </group>
+
+
+</menu>
